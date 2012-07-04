@@ -8,3 +8,4 @@ TODO
 .rake_tasks~
 # vim swaps
 .*.sw[a-z]
+*.gem

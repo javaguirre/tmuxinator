@@ -40,7 +40,7 @@ tmux <%= socket %> select-window -t <%= window(1) %>
 fi
 
 if [ -z $TMUX ]; then
-    tmux <%= socket %> -u attach-session -t <%=s @project_name %>
+    tmux -2 <%= socket %> -u attach-session -t <%=s @project_name %>
 else
     tmux <%= socket %> -u switch-client -t <%=s @project_name %>
 fi
